@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>website using bootstrap</title>
+</head>
+
+<body>
+
+  <!-- Button trigger modal -->
+<!-- login -->
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to techWorld</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- sign up modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Get a techWorld account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="cinputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="cinputPassword">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">techWorld</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                  <button class="btn btn-danger mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
+                  <button class="btn btn-danger mx-2 " data-bs-toggle="modal" data-bs-target="#signupModal">sign up</button>
+              </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="conatiner">
+        <div class="container marketing my-4">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+           
+                <img src="bprogfdbdf.jpeg" width="200" height="300" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-circle" alt="tech image">
+        
+                <h2>app development</h2>
+                <p>Everyhting you need to learn about app development is here.</p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+         
+                <img src="code11.jpeg" width="200" height="300" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-circle" alt="tech image">
+                <h2>Web development</h2>
+                <p>Everyhting you need to learn about web development is here.</p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4 ">
+      
+                <img src="8tech.jpeg" width="200" height="300"class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-circle" alt="tech image">
+        
+                <h2>Programming lanaguages</h2>
+                <p>Learn programming lanaguages like java, python, go and many more </p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        
+        
+            <!-- START THE FEATURETTES -->
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7 d-flex flex-column justify-content-center align-tem-center">
+                <h2 class="featurette-heading">Java. <span class="text-muted">It’ll blow your mind.</span></h2>
+                <p class="lead">java is one of the popular programming languages and it is use by many top companies for the development purpose.</p>
+              </div>
+              <div class="col-md-5">
+                <img src="tech11.jpeg" width="300" height="300"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="tech image">
+               
+        
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette  ">
+              <div class="col-md-7 order-md-2 d-flex  flex-column align-tem-center justify-content-center">
+                <h2 class="featurette-heading">Python.<span class="text-muted">See for yourself.</span></h2>
+                <p class="lead">learn Python and do you know python used in data science and machine learning vastly one of the main reason is its simple and easy to learn.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img src="code22.jpeg" width="300" height="300" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="tech image">
+      
+        
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7 d-flex  flex-column align-tem-center justify-content-center">
+                <h2 class="featurette-heading">Web development. <span class="text-muted">Checkmate.</span></h2>
+                <p class="lead">Learn everything about web development staring form html upto apis .In this bootcamp You will learn about html, css, JavaScript, node js, express js, mongo db, api, creating your own api, react.</p>
+              </div>
+              <div class="col-md-5">
+                <img src="code33.jpeg" width="300" height="300"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="tech image">
+                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <!-- /END THE FEATURETTES -->
+        
+          </div>
+    </div>
+
+    <div class="bg-dark text-secondary px-2 py-3 text-center">
+        <div class="py-3">
+          <h1 class="display-5 fw-bold text-white">Itachi Uchiha</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-2">Itachi Uchiha an anime character</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" fdprocessedid="djxg8x">Go to about </button>
+              <button type="button" class="btn btn-outline-light btn-lg px-4" fdprocessedid="blk7dw"><a class="nav-link" href="/contact.html">contact </a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
